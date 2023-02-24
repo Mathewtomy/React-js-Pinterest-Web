@@ -1,0 +1,37 @@
+.se2{
+  width: 65%;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 15px;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    display: flex;
+    margin: 0;
+}
+  .btns{
+    background-color:red;
+    color:white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    opacity: 1;
+}
+.se2 .new_pin_input{
+  width: 465px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: lavenderblush;
+}
+
+
+  

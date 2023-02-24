@@ -1,0 +1,193 @@
+.App{
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: #feffff;
+    display: flex;
+    overflow-x: hidden;
+    padding: 0px 40px;
+
+}
+
+.menuContainer{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 30px 15px;
+}
+
+.subMenu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.MuiSvgIcon-root{
+    color: #313233;
+    font-size: 18px;
+}
+.logo{
+    width: 70px;
+    min-width: 40px;
+}
+main{
+    flex: 1;
+    height: 100%;
+}
+
+.iconContainer{
+    width: 50px;
+    height: 50px;
+    min-width: 40px;
+    border-radius: 40%;
+    border: 2px solid #717273 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+    margin: 15px 0 ;
+    transition: 0.3s;
+}
+
+.iconContainer:hover, .iconContainer.active{
+    background: #2e2f30;
+}
+
+.iconContainer:hover .MuiSvgIcon-root,
+.iconContainer.active .MuiSvgIcon-root{
+    color: #feffff;
+}
+
+main{
+    flex: 1;
+    height: 100%;
+    padding-top: 35px;
+    margin-left: 130px;
+}
+
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background: #feffff;
+    border: 2px solid #757677;
+    padding: 8px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+.searchBoxs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: #feffff;
+    border: 2px solid #757677;
+    padding: 8px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+}
+.searchBox input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #313233;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.search{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.search img{
+    width: 25px;
+    background: white;
+    border: 2px solid gray;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.search img:hover{
+    background: rgb(194, 194, 194);
+}
+
+
+.mainContainer{
+    flex: 1;
+    height: auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    grid-auto-rows: 10px;
+}
+
+.Pin .mainPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.Pin .content{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    bottom: -55;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    font-weight: 200;
+    font-size: 10px;
+    color: white;
+    font-family: "Poppins";
+}
+
+.Pin:hover .content{
+    bottom: 0%;
+}
+
+
+
+.Pin .content .search{
+    background: green !important;
+}
+.Pin{
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #444;
+    margin: 5px;
+}
+
+.Pin.small{
+    grid-row-end: span 26;
+}
+.Pin  .medium{
+    grid-row-end:span 33;
+}
+.Pin.large{
+    grid-row-end: span 45;
+}
